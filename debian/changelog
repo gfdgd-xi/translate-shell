@@ -1,5 +1,180 @@
-template-repository (1.0-1) unstable; urgency=medium
+translate-shell (0.9.7.1-2) unstable; urgency=medium
 
-  * Initial release
+  * Depends: bsdextrautils
+    Closes: #1052302
+  * Standards-Version: 4.6.2 (routine-update)
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Andreas Tille <tille@debian.org>  Tue, 13 Feb 2024 08:48:56 +0100
+
+translate-shell (0.9.7.1-1) unstable; urgency=medium
+
+  * New upstream version 0.9.7.1
+
+ -- Mo Zhou <lumin@debian.org>  Fri, 17 Feb 2023 16:37:38 -0500
+
+translate-shell (0.9.7-1) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Repository-Browse.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+  * Update standards version to 4.6.1, no changes needed.
+
+  [ Mo Zhou ]
+  * Update watch file.
+  * New upstream version 0.9.7 (Aug 2022)
+
+ -- Mo Zhou <lumin@debian.org>  Thu, 17 Nov 2022 10:39:23 -0500
+
+translate-shell (0.9.6.12-1) unstable; urgency=medium
+
+  * New upstream version 0.9.6.12
+  * Remove DeepL from "Description:". (Closes: #964319)
+  * Bump debhelper compat level to 13 and deprecate d/compat.
+  * Bump Standards-Version to 4.5.0 (no change).
+  * Specify Rules-Requires-Root: no.
+  * Update my mail address.
+  * Bump the YEAR in d/copyright.
+
+ -- Mo Zhou <lumin@debian.org>  Thu, 29 Oct 2020 14:04:41 +0800
+
+translate-shell (0.9.6.11-1) unstable; urgency=medium
+
+  * New upstream version 0.9.6.11
+
+ -- Mo Zhou <cdluminate@gmail.com>  Thu, 22 Aug 2019 05:56:10 +0000
+
+translate-shell (0.9.6.10-1) unstable; urgency=medium
+
+  * New upstream version 0.9.6.10
+
+ -- Mo Zhou <cdluminate@gmail.com>  Fri, 12 Jul 2019 16:00:30 +0000
+
+translate-shell (0.9.6.9-1) unstable; urgency=medium
+
+  * New upstream version 0.9.6.9
+
+ -- Mo Zhou <cdluminate@gmail.com>  Wed, 26 Dec 2018 12:44:24 +0000
+
+translate-shell (0.9.6.8-1) unstable; urgency=medium
+
+  * New upstream version 0.9.6.8
+  * Bump Standards-Version to 4.2.0 (no change).
+
+ -- Mo Zhou <cdluminate@gmail.com>  Mon, 13 Aug 2018 15:39:53 +0000
+
+translate-shell (0.9.6.7-1) unstable; urgency=medium
+
+  * New upstream version 0.9.6.7
+  * Update short and long description according to upstream README.
+  * Add new Recommends and Suggests. (Closes: #841195)
+
+ -- Mo Zhou <cdluminate@gmail.com>  Wed, 21 Mar 2018 09:15:03 +0000
+
+translate-shell (0.9.6.6-1) unstable; urgency=medium
+
+  [ Mo Zhou ]
+  * New upstream version 0.9.6.6
+  * Add myself as Uploader.
+  * Bump debhelper compat level to 11.
+  * Add autopkgtest control file with several basic tests.
+  * Bump Standards-Version to 4.1.3 (no change).
+
+  [ Andreas Tille ]
+  * Set Vcs fields to Salsa
+  * Add disclaimer to d/copyright
+
+ -- Mo Zhou <cdluminate@gmail.com>  Thu, 22 Feb 2018 07:40:31 +0000
+
+translate-shell (0.9.6.5-1) unstable; urgency=medium
+
+  * New upstream version
+  * Standards-Version: 4.1.1
+  * Fix install
+
+ -- Andreas Tille <tille@debian.org>  Sat, 02 Dec 2017 08:50:51 +0100
+
+translate-shell (0.9.5-1) unstable; urgency=medium
+
+  * New upstream version
+  * debhelper 10
+  * d/watch: version=4
+
+ -- Andreas Tille <tille@debian.org>  Fri, 09 Dec 2016 22:01:49 +0100
+
+translate-shell (0.9.4-1) unstable; urgency=medium
+
+  * New upstream version
+  * cme fix dpkg-control
+
+ -- Andreas Tille <tille@debian.org>  Wed, 25 May 2016 21:22:35 +0200
+
+translate-shell (0.9.2.1-1) unstable; urgency=medium
+
+  * New upstream version dealing with API change
+
+ -- Andreas Tille <tille@debian.org>  Fri, 18 Dec 2015 14:38:47 +0100
+
+translate-shell (0.9.1-1) unstable; urgency=medium
+
+  * New upstream version
+
+ -- Andreas Tille <tille@debian.org>  Thu, 17 Dec 2015 17:53:20 +0100
+
+translate-shell (0.9.0.9-1) unstable; urgency=medium
+
+  * New upstream version
+
+ -- Andreas Tille <tille@debian.org>  Fri, 09 Oct 2015 20:08:18 +0200
+
+translate-shell (0.9.0.8-1) unstable; urgency=medium
+
+  * New upstream version
+    Closes: #796578
+  * s/INSTDIR/PREFIX/ as per upstream change
+  * Bump libfribidi-bin from Suggests to Depends - otherwise rtl language
+    sections in create a include/Languages.awk would create a error
+    messages on each trans call
+
+ -- Andreas Tille <tille@debian.org>  Mon, 14 Sep 2015 14:22:10 +0200
+
+translate-shell (0.8.23-1) unstable; urgency=medium
+
+  * New upstream version
+    Closes: #782811
+
+ -- Andreas Tille <tille@debian.org>  Thu, 30 Apr 2015 10:41:40 +0200
+
+translate-shell (0.8.22.2-1) experimental; urgency=medium
+
+  * New upstream version
+    Closes: #768217, #762893
+
+ -- Andreas Tille <tille@debian.org>  Tue, 16 Dec 2014 09:03:40 +0100
+
+translate-shell (0.8.22-1) unstable; urgency=medium
+
+  * New upstream version
+  * cme fix dpkg-control
+
+ -- Andreas Tille <tille@debian.org>  Sat, 01 Nov 2014 09:44:47 +0100
+
+translate-shell (0.8.21-1) unstable; urgency=medium
+
+  * New upstream version
+    Closes: #762075
+  * Software was renamed to translate-shell to avoid trademark issues
+  * License changed from beerware to public domain
+  * Manpage provided in upstream source
+    Closes: #762138
+  * Regard upstream hints about further dependencies
+  * Mention upstream bug tracker
+
+ -- Andreas Tille <tille@debian.org>  Mon, 22 Sep 2014 15:40:37 +0200
+
+google-translate-cli (0.8.20-1) unstable; urgency=medium
+
+  * Initial Upload (Closes: #755502)
+  * Move to contrib
+
+ -- Andreas Tille <tille@debian.org>  Wed, 17 Sep 2014 12:23:33 +0200

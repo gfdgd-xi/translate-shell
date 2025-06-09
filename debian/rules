@@ -2,3 +2,11 @@
 
 %:
 	dh $@
+
+override_dh_auto_install:
+	# do nothing
+
+override_dh_auto_test:
+	echo "=============================================================================="
+	echo "Test needs online connection to google and thus can not be done in chroot"
+	echo "=============================================================================="

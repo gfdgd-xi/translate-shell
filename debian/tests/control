@@ -1,0 +1,9 @@
+Test-Command: trans --version 2>/dev/null
+
+Test-Command: trans -s en Thanks 2>/dev/null
+
+Test-Command: trans -s de Danke 2>/dev/null
+
+Test-Command: trans -s ja Arigato 2>/dev/null
+
+Test-Command: trans -s zh 谢谢 2>/dev/null
